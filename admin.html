@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#0b0b0b" />
+  <meta name="description" content="SAINTYVES Studio — private creator dashboard." />
+  <title>SAINTYVES Studio</title>
+  <link rel="stylesheet" href="/style.css" />
+</head>
+<body>
+  <div class="noise"></div>
+  <header class="site-header">
+    <a class="wordmark" href="/index.html#home">SAINTYVES<span>®</span></a>
+    <nav class="main-nav" aria-label="Primary navigation">
+      <a href="/index.html#beats">Beats</a>
+      <a href="/index.html#about">About</a>
+      <a href="/index.html#contact">Contact</a>
+    </nav>
+    <div class="header-tools">
+      <a class="text-button" href="/index.html">Exit studio</a>
+      <button class="menu-button" aria-label="Open menu"><i></i><i></i></button>
+    </div>
+  </header>
+  <main id="app"></main>
+  <script>location.hash = location.hash || '#admin';</script>
+  <script src="/script.js"></script>
+</body>
+</html>
