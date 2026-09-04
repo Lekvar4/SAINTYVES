@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="SAINTYVES — premium beats for artists building their own world.">
+  <title>SAINTYVES — Your Sound. Your World.</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="noise"></div>
+  <header class="site-header">
+    <a class="logo" href="index.html">SAINTYVES<span>®</span></a>
+    <nav>
+      <a href="#beats">Beats</a><a href="#about">About</a><a href="#contact">Contact</a>
+    </nav>
+    <div class="header-actions">
+      <button class="icon-btn" id="openSearch" aria-label="Search">⌕</button>
+      <button class="cart-btn" id="openCart">Cart <b id="cartCount">0</b></button>
+      <a class="admin-link" href="admin.html">Admin</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-kicker">Independent producer · Lagos / Worldwide</div>
+      <h1>YOUR<br><em>SOUND.</em><br>YOUR WORLD.</h1>
+      <p>Premium production for artists who refuse to sound like everybody else.</p>
+      <a class="button button-light" href="#beats">Explore the catalog <span>↗</span></a>
+      <div class="hero-mark">SY</div>
+    </section>
+
+    <section class="marquee"><div>ORIGINAL PRODUCTION · AFROBEATS · R&B · AFRO FUSION · ORIGINAL PRODUCTION ·</div></section>
+
+    <section class="section" id="beats">
+      <div class="section-head">
+        <div><span class="eyebrow">01 / SELECTED WORK</span><h2>THE CATALOG</h2></div>
+        <a href="beats.html" class="text-link">View all beats ↗</a>
+      </div>
+      <div class="beat-grid" id="featuredBeats"></div>
+    </section>
+
+    <section class="manifesto">
+      <div class="eyebrow">02 / THE APPROACH</div>
+      <blockquote>“The beat is not the song.<br><span>It's where the song begins.</span>”</blockquote>
+    </section>
+
+    <section class="about section" id="about">
+      <div class="about-image"><span>SAINT<br>YVES</span></div>
+      <div class="about-copy">
+        <span class="eyebrow">03 / ABOUT SAINTYVES</span>
+        <h2>BUILT FOR<br><em>YOUR NEXT</em><br>RECORD.</h2>
+        <p>SAINTYVES is an independent production house focused on texture, rhythm and emotion. Every beat is designed to leave room for the artist while still having a world of its own.</p>
+        <p>Buy a license, write your record, make it yours.</p>
+        <a class="text-link" href="#contact">Work together ↗</a>
+      </div>
+    </section>
+
+    <section class="contact section" id="contact">
+      <span class="eyebrow">04 / CONTACT</span>
+      <div class="contact-row">
+        <h2>LET'S MAKE<br><em>SOMETHING.</em></h2>
+        <div>
+          <p>For custom production, exclusives, placements or general enquiries.</p>
+          <a class="email" href="mailto:hello@saintyves.com">hello@saintyves.com</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer><a class="logo" href="#">SAINTYVES<span>®</span></a><p>© 2026 SAINTYVES. ALL RIGHTS RESERVED.</p><div><a href="#">Instagram</a><a href="#">YouTube</a><a href="#">TikTok</a></div></footer>
+
+  <div class="drawer" id="cartDrawer">
+    <div class="drawer-inner"><div class="drawer-top"><h3>YOUR CART</h3><button class="close" data-close>×</button></div><div id="cartItems"></div><div class="cart-total"><span>Total</span><strong id="cartTotal">$0.00</strong></div><button class="button button-light full" id="checkout">Proceed to checkout</button></div>
+  </div>
+  <div class="search-modal" id="searchModal"><button class="close" data-close>×</button><div><span class="eyebrow">SEARCH CATALOG</span><input id="searchInput" placeholder="Type a beat name..."><div id="searchResults"></div></div></div>
+  <div class="toast" id="toast"></div>
+  <script src="script.js"></script>
+</body>
+</html>
